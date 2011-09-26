@@ -4527,9 +4527,6 @@ VMLRenderer.prototype = merge(SVGRenderer.prototype, { // inherit SVGRenderer
 		 */
 
 		rect: function (left, top, width, height, options) {
-			/*for (var n in r) {
-				logTime && console.log(n)
-				}*/
 
 			if (!defined(options)) {
 				return [];

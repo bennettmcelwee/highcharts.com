@@ -4527,9 +4527,6 @@ VMLRenderer.prototype = merge(SVGRenderer.prototype, { // inherit SVGRenderer
 		 */
 
 		rect: function (left, top, width, height, options) {
-			/*for (var n in r) {
-				logTime && console.log(n)
-				}*/
 
 			if (!defined(options)) {
 				return [];
@@ -12887,7 +12884,6 @@ each(['circle', 'square'], function (shape) {
 			path.push('M', x + w / 2, y + h, 'L', anchorX, anchorY);
 		}
 
-		//console.trace(x, y, );
 		return path;
 	};
 });
