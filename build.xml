@@ -317,30 +317,13 @@
         </copy>
 
         <!-- 3. Copy examples -->
-        <copy todir="${dist.dir}/highcharts/examples">
-            <fileset dir="${package.dir}/examples"/>
-        </copy>
-        <copy file="${package.dir}/index.htm" todir="${dist.dir}/highcharts"/>
-        <copy todir="${dist.dir}/highstock/examples">
-            <fileset dir="${package.dir}/examples"/>
-        </copy>
-        <copy file="${package.dir}/index.htm" todir="${dist.dir}/highstock"/>
+        <echo message="Skipping step: Copy examples"/>
 
         <!-- 4. Copy graphics -->
-        <copy todir="${dist.dir}/highcharts/graphics">
-            <fileset dir="${package.dir}/graphics"/>
-        </copy>
-        <copy todir="${dist.dir}/highstock/graphics">
-            <fileset dir="${package.dir}/graphics"/>
-        </copy>
+        <echo message="Skipping step: Copy graphics"/>
 
         <!-- 5. Copy php export server -->
-        <copy todir="${dist.dir}/highcharts/exporting-server">
-            <fileset dir="${package.dir}/exporting-server"/>
-        </copy>
-        <copy todir="${dist.dir}/highstock/exporting-server">
-            <fileset dir="${package.dir}/exporting-server"/>
-        </copy>
+        <echo message="Skipping step: Copy php export server"/>
 
         <!-- 6. Create a zip files -->
         <zip destfile="${dist.dir}/${highcharts.product.name}-${highcharts.product.version}.zip" basedir="${dist.dir}/highcharts"/>
